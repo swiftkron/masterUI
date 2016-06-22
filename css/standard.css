@@ -1,0 +1,335 @@
+@import url(https://fast.fonts.net/cssapi/2b711b0d-fbe0-4a83-80e8-86e2497fcbcb.css);
+/* CSS RESET RULES */
+html, nav, a, abbr, acronym, address, area, b, bdo, big, blockquote, button, caption, cite, code,
+col, colgroup, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, hr, i, img,
+ins, kbd, label, legend, li, map, object, ol, p, param, pre, q, samp, small, span, strong, sub,
+sup, table, tbody, td, textarea, input, tfoot, th, thead, tr, tt, ul, var, article, aside {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'HelveticaNeueW01-55Roma', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background: #d9dfe3;
+    color: #39464f;
+}
+
+img {
+    display: block;
+    border: 0;
+    max-width: 100%;
+}
+.text-center{
+	text-align:center;
+}
+.img.center {
+    display: block;
+    margin: 0 auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+:hover {
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+a:link, a:active, a:visited{
+	text-decoration:none;
+	color:#008cc5;
+}
+a:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    cursor: pointer;
+		color:#0881b4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+h1 {
+    font-size: 48px;
+    margin:24px auto;
+    line-height: 50px;
+}
+h2 {
+    font-size:36px;
+    line-height:42px;
+    margin:24px auto;
+}
+h3 {
+    font-size:24px;
+    line-height:29px;
+    margin:24px auto;
+}
+h4 {
+    font-size:21px;
+    line-height:24px;
+    margin:12px auto;
+}
+p {
+    font-size:18px;
+    line-height:24px;
+    margin:12px auto;
+}
+ul {
+    list-style-type:disc;
+    margin:24px 1em;
+}
+li{
+    padding:6px 0;
+}
+
+/* _ common classes _ */
+.hidden{display:none;}
+.left{float:left;}
+.right{float:right;}
+.clearfix{clear:both;}
+.nobr{white-space:nowrap;}
+.smalltext{font-size:12px !important; line-height:14px;}
+.separator{display:block;margin:6px 0;width:100%;height:2px;background-color:#edf0f2;}
+.nopad{padding:0 0 0 0 !important;}
+.pad{padding:24px;}
+.bold{font-weight:bold !important; font-weight:600 !important;}
+@media(max-width:1023px){
+    h1 .nobr{white-space:unset;}
+}
+@media(max-width:767px){
+    .nobr{white-space:unset;}
+}
+
+/* _ alignment _ */
+.text-left{text-align:left;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+.block{
+	display:block;
+}
+.block-center{
+	margin:0 auto;
+}
+
+/* _ colors _ */
+.orange{color:#FE5000 !important;}
+.text-grey{color:#526774 !important;}
+.dark-grey{color:#39464F !important;}
+.white{color:#FFF !important;}
+.black{color:#2a353d !important;}
+.bg_orange{
+    background-color:#FE5000;
+    color:#FFF;
+}
+.bg_grey{background-color:#edf0f2;}
+.bg_dark-grey{
+    background-color:#39464F;
+    color:#FFF;
+}
+.bg_black {
+    background-color:#2a353d;
+    color: #FFF;
+}
+.bg_blue {
+    background-color: #008cc5;
+    color: #FFF;
+}
+.bg_white{
+    background-color:#FFF;
+    color:#526774;
+}
+.bg_white h2{
+    color:#fe5000;
+}
+.bg_white h3{
+    color:#2a353d;
+}
+.bg_green{
+    background:#00b19e;
+    color:#FFF;
+}
+.bg_green h1, .bg_green h2, .bg_green h3, .bg_green h4, .bg_green h5,  .bg_green h6{
+    color:#FFF;
+}
+.bg_lightblue{
+    background:#e5f3f9;
+}
+.bg_lightgreen{
+    background:#e5f7f5;
+}
+.bg_lightgreen h2{
+    color:#00b19f;
+}
+
+/* Forms */
+input[type='text'], input[type='email'], input[type='password'], input[type='number'], select, textarea{
+	-webkit-border-radius: 2px;    
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+    border:#a5b7c2 1px solid;
+    padding:10px 12px;
+    margin:.5em auto;
+    width:100%;
+	font-family:Helvetica,Arial,sans serif;
+    font-size:16px;
+}
+input:focus {
+    box-shadow:#a5b7c2 0px 2px 3px;
+}
+
+/*  buttons  */
+.button, button, input[type=button], input[type=submit] {
+    display:inline-block;
+    margin:24px auto;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 40px;
+    border-radius: 30px;
+    border:none;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+.button_lg{
+    padding: 18px 60px;
+}
+.button_orange, a.button_orange:link {
+    background: #fd5000;
+    color: #fff !important;
+}
+.button_orange:hover {
+    background:#d0481d;
+}
+.button_white {
+    background: #fff;
+    color: #fe5009 !important;
+    border: 1px solid #fe5009;
+}
+.button_white:hover {
+    background: #fe5009;
+    color: #fff !important;
+}
+.button_blue {
+    background-color: #008cc5;
+    color: #FFF;
+}
+.button_blue:hover, input[type=submit].button_blue:hover{
+    background:#087bac; 
+    color:#FFF;  
+}
+.button_white-green{
+    background:#FFF;
+    color:#00b19f;
+}
+
+/* layout sections */
+section {
+    padding:48px 0px 72px;
+}
+section [class*='col-']{
+    padding:0 24px;   
+}
+section [class*='col-']:first-child{
+    padding:0 24px 0 0;
+    padding-left:0 !important;
+}
+section [class*='col-']:last-child{
+    padding:0 0 0 24px;
+    padding-right:0 !important;
+}
+@media(max-width:768px){
+section {
+    padding:24px 24px;
+}
+section [class*='col-']{
+    padding:0 24px 24px;   
+}
+section [class*='col-']:first-child{
+    padding:0 24px 24px !important;
+    padding-right:unset;
+}
+section [class*='col-']:last-child{
+    padding:0 24px 24px;
+    padding-left:unset;
+}
+}
+
+/* content type */
+/*** heros  ***/
+.hero1 {
+    padding:96px 0 120px;
+		text-align:center;
+		/* default */background:url('http://www.act.com/images/default-source/background-images/hpbg.png') center center;
+		background-size:cover;
+}
+.hero1 p, .hero2 p{
+	max-width:800px;
+}
+.hero2 {
+    padding:72px 0 96px;
+		text-align:center;
+		background-size:cover;
+}
+.hero3{
+    padding:72px 0 96px;
+}
+.hero3 .col-2{
+	margin:12px auto;
+}
+.hero3 .col-2 img{
+	max-width:100px;
+	max-height:100px;
+}
+.hero3 h1{
+	margin:12px 0;
+}
+
+@media(max-width:768px) {
+.hero1, .hero2, .hero3 {
+    padding:48px 24px;
+}
+.hero3{
+	text-align:center;
+}
+}
+
+.sidebar{
+    margin:24px auto;
+}
+
+/* WIDGETS */
+section#act_newsletter input.email {
+    background: #edf0f2 url(http://act.com/images/default-source/UI-Kit/letter.gif) no-repeat;
+    background-position: 20px center;
+    color: #a8acb9;
+    border: none;
+    height: 42px;
+    padding: 0 20px 0 50px;
+    border-radius: 21px;
+    -o-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -webkit-border-radius: 21px;
+		margin-top:24px;
+}
+@media(max-width:768px) {
+	section#act_newsletter{
+		text-align:center;
+	}
+	section#act_newsletter input.email, #enews_button{margin-top:0px;}
+}
